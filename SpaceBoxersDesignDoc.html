@@ -1,0 +1,132 @@
+<html>
+ <head>
+  <title>Space Boxers Game Design Document</title>
+ </head>
+
+ <body>
+
+ <h2 style="width:750px" align="center">
+  Space Boxers<br />
+  Game Design Document
+ </h2>
+
+ <h4 style="width:750px" align="center">
+  by Brendan Kondracki, Yong chen, SeokHoon Kim
+ </h4>
+
+<div id="content">
+
+  <h3>INTRODUCTION</h3>
+
+  <p>This document will describe the overall view of "Space Boxers", a top-down, 2-D game developed in the javascript programming language. This game will make use of multiple game design techniques such as collision detection, path finding, and artificial intelligence.</p>
+<br />
+
+  <h3>TECHNOLOGY</h3>
+
+  <p>Space Boxers will be developed as a desktop-based web game, created in javascript using the Phaser library and Tiled application.</p>
+<br />
+
+  <h3>BACK STORY</h3>
+
+  <p>For centuries, space boxing has been the most popular sport in the galaxy. Few people on earth know of its existence....until now! For the first time ever, you will get to play as your very own space boxer, taking on harder and more advanced opponents along your journey.</p>
+<br />
+
+  <h3>OBJECTIVE</h3>
+
+  <p>Your task is to master the art of space boxing, level by level. As the game progresses, you will be forced to take on a larger number of opponents, with more obstacles standing between you and victory. Should you be knocked out at any point in your journey, you will fall off the edge of space forever.</p>
+
+<br />
+
+  <h3>GAMEPLAY</h3>
+
+  <p>Space Boxers will be formatted as a top-down, tile based game. The player will be able to move left, right, up, and down the arena. Since the arena will be smaller than the viewport, no scrolling will be required.</p>
+
+  <p>As the user, your goal will be to knock out each of the enemy bots from the arena, into outer space, by approaching them in close proximity, and meleeing them. Enemy bots, however, will have the ability to shoot projectiles at you from any distance. In order to prevent being hit by these projectiles, you will have to switch your block's color to match that of the attacker, and melee the projectile before it makes contact with your body. Throughout the play arena, there will be open holes which either your or the bots can fall through, so caution must be used when moving around the arena. Once all enemy bots have been eliminated, the level will complete, and the user will be able to move onto the next level.</p>
+
+<br />
+
+  <h3>CONTROLS</h3>
+
+  <p>This game will be played using both a keyboard and mouse. Once started, use the following:</p>
+
+   <ul>
+    <li><strong>A</strong> - Move Left</li>
+    <li><strong>D</strong> - Move Right</li>
+    <li><strong>W</strong> - Move Up</li>
+    <li><strong>S</strong> - Move Down</li>
+    <li><strong>LEFT-ARROW</strong> - Change Block Color</li>
+    <li><strong>RIGHT-ARROW</strong> - Change Block Color (Opposite Direction)</li>
+    <li><strong>SPACE</strong> - Melee</li>
+    <li><strong>ESC</strong> - Pause/Unpause the game. If a game is not in progress, ESC does nothing.</li>
+   </ul>
+<br />
+
+  <h3>GRAPHICAL USER INTERFACE</h3>
+
+  <p>As far as the GUI is concerned, if we consider</p>
+
+  <ul>
+   <li><strong>Splash Screen</strong> - The splash screen GUI simply presents a game logo and a Start button for the user to press when they are ready to play.</li>
+<br />
+
+   <li><strong>Main Menu</strong> - The main menu of the game will be deployed with the following options:
+    <ul>
+     <li><strong>Start Game</strong> - This option will start the last unlocked level by the user.</li>
+     <li><strong>Select Level</strong> - This button will take the player to a level selection screen, where they may choose to play any previously unlocked level.</li>
+     <li><strong>Controls</strong> - If pressed, the game will display an info screen that includes a description of all game controls.</li>
+     <li><strong>Help</strong> - If pressed, the game will display an info screen with information about the game authors.</li>
+    </ul></li>
+<br />
+
+   <li><strong>In-Game GUI</strong> - Once a level has been selected, the player will be loaded into the arena, and a countdown timer will show them when to begin playing. Once the timer has completed, all that will be displayed on the screen is the player, enemy bots, the arena, and the surrounding space enviornment. </li>
+<br />
+
+  <h3>ARTWORK</h3>
+
+  <p>All artwork in the game will be original. The following needs to be created:</p>
+
+  <ul>
+   <li><strong>Player/Enemy Bots</strong> - We will need to design colored blocks to be used by both the player, and enemy bots. Since the number of possible colors employed by the player will increase as the game goes on, the number of colored sprites we create will need to be proportional to the number of levels that can be reached by the player.</li>
+<br />
+
+   <li><strong>Arena</strong> - The arena will be a squared area in space, with multiple holes scattered around it. We will need to design tiles to represent the area with which the player can move across. </li>
+<br />
+
+   <li><strong>Space Background</strong> - In order to make sure the player is aware of the areas in the viewport with which to avoid, we will need to design the space background enviornment.</li>
+  </ul>
+<br />
+
+
+
+  <h3>SOUND EFFECTS</h3>
+
+  <p>All sound effects will be original. Sounds must be made to coincide with each of the following events:</p>
+   <ul>
+    <li><strong>Enemy Shooting</strong></li>
+    <li><strong>Player Melee</strong></li>
+    <li><strong>Enemy Being Contacted By Melee</strong></li>
+    <li><strong>Enemy/Player Being Knocked Out Of Arena</strong></li>
+    <li><strong>Player Changing Color</strong></li>
+   </ul>
+<br />
+
+  <h3>MUSIC</h3>
+
+  <p>Game Music will be added when time permits.</p>
+<br />
+
+   <h3>Images</h3>
+   <img src="Splash.jpg" height=500 width=1000>
+   <img src="Menu.jpg" height=500 width=1000>
+   <img src="Levels.jpg" height=500 width=1000>
+   <img src="control.jpg" height=500 width=1000>  
+   <img src="Help.jpg" height=500 width=1000>
+   <img src="ingame.jpg" height=500 width=1000>
+
+<hr />
+
+<p><br /></p>
+</div>
+
+ </body>
+</html>
